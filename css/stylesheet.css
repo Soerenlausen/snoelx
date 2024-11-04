@@ -107,14 +107,23 @@ p {
 
 .mebox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .mebox img {
-    width: 50%;
+    height: 800px;
     object-fit: cover;
+    border-radius: 10px;
+    order: 2;
+    aspect-ratio: 1/1;
+    margin-top: 20px;
+}
+
+.mebox h2 {
+    font-size: 32px;
 }
 
 @media only screen and (max-width: 768px) {
