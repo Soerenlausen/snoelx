@@ -105,6 +105,18 @@ p {
     color: #76C039;
 }
 
+.mebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.mebox img {
+    width: 50%;
+    object-fit: cover;
+}
+
 @media only screen and (max-width: 768px) {
 header > nav {
     display: none;
