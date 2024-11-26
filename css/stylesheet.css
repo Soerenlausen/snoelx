@@ -79,7 +79,7 @@ p {
     width: 100%;
     color: black;
     padding: 30px 50px;
-    height: 210px;
+    height: 250px;
 }
 
 .show-search {
@@ -93,7 +93,7 @@ p {
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 50px;
-    height: 500px;
+    height: 300px;
     align-items: center;
     justify-content: center;
 }
@@ -129,6 +129,7 @@ p {
 
 h2{
     grid-area: h2;
+    font-size: 36px;
     text-align: center;
     padding-top: 40px;
     color: #222222;
@@ -143,6 +144,7 @@ img{
 
 p{
     grid: p;
+    font-size: 18px;
     padding: 20px;
     color: #222222;
 }
@@ -171,13 +173,16 @@ header > nav {
     color: red;
 }
 
-.hero {
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .htext {
     text-align: center;
+}
+
+h2{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
 }
 
 }
