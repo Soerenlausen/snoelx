@@ -8,7 +8,6 @@ Dirty white - #ada492
 * {
    box-sizing: border-box;
    margin: 0; 
-   color: white;
 }
 
 body {
@@ -61,8 +60,13 @@ nav {
     height: 100px;
 }
 
+a{
+    color: white;
+}
+
 a,
-p {
+p,
+h2 {
     font-family: Helvetica, sans-serif; 
 }
 
@@ -131,22 +135,47 @@ h2{
     grid-area: h2;
     font-size: 36px;
     text-align: center;
-    padding-top: 40px;
+}
+
+.hme{
+    padding: 40px 0 20px 0;
     color: #222222;
 }
 
-img{
+.pic{
     grid-area: pic;
     width: 100%;
     padding: 20px;
     border-radius: 2rem;
 }
 
+.frame img{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+}
+
 p{
     grid: p;
     font-size: 18px;
-    padding: 20px;
+}
+
+.pme{
+    padding: 25px;
     color: #222222;
+}
+
+.gallery{
+    background-color: #ffc261;
+}
+
+.gtitle{
+    padding: 10px;
+}
+
+.frame{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
 }
 
 .whoyou{
@@ -157,6 +186,42 @@ p{
     "pic h2"
     "pic p";
     background-color: #ffc261;
+}
+
+.clothes{
+    display: grid inline;
+    grid-auto-flow: column;
+    width: 100%;
+    overflow-x: scroll;
+    background-color: #fdfbf4;
+    border-top: 0.16em solid #222222;
+    border-bottom: 0.16em solid #222222;
+    scrollbar-width: none;
+}
+
+.clothes::-webkit-scrollbar {
+    display: none;
+}
+
+.pbox{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding-bottom: 20px;
+    border-left: 0.08px solid #222222;
+    border-right: 0.08px solid #222222;
+}
+
+.ptext{
+    padding-left: 25px;
+    color: black;
+}
+
+.ptitle{
+    background-color: white;
+    border-top: 0.08em solid #222222;
+    text-align: left;
+    padding: 10px 25px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -185,6 +250,16 @@ p{
     font-size: 16px;
 }
 
+.clothes{
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.pbox{
+    width: 100vw;
+    border-bottom: 0.16em solid #222222;
+}
+
 }
 
 /* Media Query for Mobile Devices */
@@ -202,6 +277,7 @@ p{
    header nav a {
     padding-left: 50px;
    }
+
 }
 
 header nav a:hover,
