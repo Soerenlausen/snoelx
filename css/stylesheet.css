@@ -319,7 +319,7 @@ footer {
     flex-wrap: wrap;
 }
 
-.links {
+.footerbox li a {
     text-decoration: none;
     color: white;
 }
