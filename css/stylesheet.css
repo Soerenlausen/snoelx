@@ -150,9 +150,14 @@ h2{
 }
 
 .frame img{
-    width: 100%;
-    padding: 5px;
+    max-height: 450px;
     border-radius: 15px;
+    border: 0.16em solid #222222;
+}
+
+.frame img:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 8px #222222;
 }
 
 p{
@@ -167,15 +172,20 @@ p{
 
 .gallery{
     background-color: #ffc261;
+    padding-top: 0px;
 }
 
 .gtitle{
-    padding: 10px;
+    padding-top: 20px;
 }
 
 .frame{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: grid inline;
+    grid-auto-flow: column;
+    width: 100%;
+    overflow-x: scroll;
+    gap: 5px;
+    padding: 20px;
 }
 
 .whoyou{
@@ -194,7 +204,7 @@ p{
     width: 100%;
     overflow-x: scroll;
     background-color: #fdfbf4;
-    border-top: 0.16em solid #222222;
+    border-top: 0.08em solid #222222;
     border-bottom: 0.16em solid #222222;
     scrollbar-width: none;
 }
@@ -219,7 +229,7 @@ p{
 
 .ptitle{
     background-color: white;
-    border-top: 0.08em solid #222222;
+    border-top: 0.04em solid #222222;
     text-align: left;
     padding: 10px 25px;
 }
