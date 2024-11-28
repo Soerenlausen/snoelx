@@ -161,7 +161,7 @@ h2{
 }
 
 p{
-    grid: p;
+    grid-area: p;
     font-size: 18px;
 }
 
@@ -188,14 +188,21 @@ p{
     padding: 20px;
 }
 
+.whoyou ul{
+    grid-area: ul;
+    padding: 10px 0;
+}
+
 .whoyou{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 100px 1fr 1fr;
     grid-template-areas: 
     "pic h2"
-    "pic p";
+    "pic p"
+    "pic ul";
     background-color: #ffc261;
+    column-gap: 20px;
 }
 
 .clothes{
@@ -205,7 +212,7 @@ p{
     overflow-x: scroll;
     background-color: #fdfbf4;
     border-top: 0.08em solid #222222;
-    border-bottom: 0.16em solid #222222;
+    border-bottom: 0.08em solid #222222;
     scrollbar-width: none;
 }
 
@@ -269,6 +276,10 @@ p{
     width: 100vw;
     border-bottom: 0.16em solid #222222;
 }
+
+.whoyou ul{
+    display: none;
+   }
 
 }
 
