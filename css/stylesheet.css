@@ -294,7 +294,7 @@ main ul li a:hover{
     grid-template-rows: auto;
     width: 100%;
     padding: 30px 20vw;
-    background-image: url(../img/41066887440_b8dacb1895_o.jpg);
+    background-image: url(../img/28008318987_43c4a4604e_o.jpg);
     justify-items: center;
 }
 
@@ -329,6 +329,47 @@ main ul li a:hover{
     align-self: center;
     box-shadow: 1px 1px 3px #222222;
     grid-area: pic;
+}
+
+/* fun.html */
+
+.fun{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 20vw;
+    background-image: url(../img/41066887440_b8dacb1895_o.jpg);
+    align-items: center;
+}
+
+.fun h2{
+    color: #ffc261;
+    padding: 20px;
+    background-color: #34385B;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    width: 450px;
+    transition: 0.7s;
+}
+
+.fun h2:hover{
+    background-color: #FF8A8A;
+    color: #222222;
+    transform: scale(1.10);
+    transition: 0.7s;
+}
+
+.fun div{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 5px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.fun div video{
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 799px) {
@@ -393,16 +434,25 @@ p{
     padding: 20px;
 }
 
+.blog{
+    padding: 10px;
+}
+
 .blog div{
     grid-template-areas: 
     "pic"
     "p";
-    min-width: 350px;
+    min-width: 300px;
 }
 
 .blog p,
 .blog img{
-    width: 350px;
+    width: 300px;
+}
+
+.fun div video,
+.fun h2{
+    width: 300px;
 }
 
 }
