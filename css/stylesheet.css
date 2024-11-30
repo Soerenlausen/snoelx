@@ -195,13 +195,22 @@ p{
 .whoyou{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-rows: 100px 1fr auto;
     grid-template-areas: 
     "pic h2"
     "pic p"
     "pic ul";
     background-color: #ffc261;
     column-gap: 20px;
+}
+
+.mpic{
+    grid-area: pic;
+    width: 100%;
+    padding: 20px;
+    border-radius: 2rem;
+    min-height: 280px;
+    object-fit: cover;
 }
 
 .clothes{
@@ -362,9 +371,20 @@ p{
     border-bottom: 0.08em solid #222222;
 }
 
+.whoyou{
+    grid-template-areas: 
+    "h2 h2"
+    "pic pic"
+    "p p"; 
+}
+
 .whoyou ul{
     display: none;
    }
+
+.whoyou p{
+    padding: 0 20px 40px 20px;
+}
 
    .h1c{
     display: flex;
