@@ -97,7 +97,7 @@ h2 {
     background-image: url(../img/489830_24.jpg);
     object-fit: cover;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100vh;
     padding: 50px;
     height: 300px;
     align-items: center;
