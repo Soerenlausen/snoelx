@@ -97,7 +97,7 @@ h2 {
     background-image: url(../img/489830_24.jpg);
     object-fit: cover;
     background-repeat: no-repeat;
-    background-size: 100vh;
+    background-size: 100%;
     padding: 50px;
     height: 300px;
     align-items: center;
@@ -190,26 +190,38 @@ p{
 .whoyou ul{
     grid-area: ul;
     padding: 10px 0;
+    justify-items: center;
+    align-self: center;
 }
 
 .whoyou{
+    display: flex;
+    height: 465px;
+    background-color: #ffc261;
+    justify-content: center;
+    align-items: center;
+}
+
+.whoyou div{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 100px 1fr auto;
+    grid-template-rows: 100px auto 1fr;
     grid-template-areas: 
     "pic h2"
     "pic p"
     "pic ul";
-    background-color: #ffc261;
+    max-height: 375px;
+    max-width: 800px;
+    justify-content: center;
     column-gap: 20px;
 }
 
 .mpic{
     grid-area: pic;
-    width: 100%;
     padding: 20px;
     border-radius: 2rem;
     min-height: 280px;
+    max-height: 375px;
     object-fit: cover;
 }
 
@@ -259,7 +271,7 @@ p{
     padding: 30px;
 }
 
-main ul{
+.options{
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -269,33 +281,34 @@ main ul{
 
 }
 
-main ul li h2,
-main ul li a{
-    color: lavender;
+.options li h2,
+.options li a{
+    color: white;
     text-decoration: none;
     font-family: 'Comic Sans MS', sans-serif;
     transition: 0.7s;
     padding-bottom: 10px;
 }
 
-main ul li a:hover{
+.options li a:hover{
     font-size: 48px;
     text-transform: uppercase;
     font-weight: bolder;
     font-style: oblique;
-    color: #ffc261;
-    text-shadow: 1px 1px 8px #ffc261;
+    color: red;
+    text-shadow: 1px 1px 8px red;
     transition: 0.7s;
 }
 
 /* blog.html */
 .blog{
-    display: grid;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 30px 20vw;
     background-image: url(../img/28008318987_43c4a4604e_o.jpg);
     justify-items: center;
+    align-items: center;
 }
 
 .blog div{
@@ -308,11 +321,13 @@ main ul li a:hover{
     min-width: 750px;
     grid-template-areas: 
     "pic p";
+    transition: 0.7s;
 }
 
 .blog div:hover{
     transform: scale(1.05);
     box-shadow: 1px 1px 12px #222222;
+    transition: 0.7s;
 }
 
 .blog p{
@@ -321,6 +336,23 @@ main ul li a:hover{
     padding: 10px 20px;
     align-self: center;
     grid-area: p;
+}
+
+.blog h2{
+    color: #222222;
+    padding: 20px;
+    background-color: #ffc261;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    width: 450px;
+    transition: 0.7s;
+}
+
+.blog h2:hover{
+    background-color: #292953;
+    color: #fdfbf4;
+    transform: scale(1.10);
+    transition: 0.7s;
 }
 
 .blog img{
@@ -349,14 +381,14 @@ main ul li a:hover{
     border-radius: 15px;
     margin-bottom: 30px;
     width: 450px;
-    transition: 0.7s;
+    transition: 1s;
 }
 
 .fun h2:hover{
     background-color: #FF8A8A;
     color: #222222;
     transform: scale(1.10);
-    transition: 0.7s;
+    transition: 1s;
 }
 
 .fun div{
@@ -453,6 +485,10 @@ p{
 .fun div video,
 .fun h2{
     width: 300px;
+}
+
+.hero{
+    background-size: 150%;
 }
 
 }
