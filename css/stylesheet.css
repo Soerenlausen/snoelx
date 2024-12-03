@@ -402,6 +402,7 @@ p{
 
 .fun div video{
     border-radius: 15px;
+    width: 480px;
 }
 
 @media only screen and (max-width: 799px) {
