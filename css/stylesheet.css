@@ -85,7 +85,7 @@ h2 {
     width: 100%;
     color: black;
     padding: 30px 50px;
-    height: 250px;
+    height: 270px;
 }
 
 .show-search {
@@ -220,7 +220,6 @@ p{
     grid-area: pic;
     padding: 20px;
     border-radius: 2rem;
-    min-height: 280px;
     max-height: 375px;
     object-fit: cover;
 }
