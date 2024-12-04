@@ -444,7 +444,7 @@ p{
     border-bottom: 0.08em solid #222222;
 }
 
-.whoyou{
+.whoyou div{
     grid-template-areas: 
     "h2 h2"
     "pic pic"
