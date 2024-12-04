@@ -483,7 +483,8 @@ p{
 }
 
 .fun div video,
-.fun h2{
+.fun h2,
+.blog h2{
     width: 300px;
 }
 
