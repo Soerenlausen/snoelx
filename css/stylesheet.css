@@ -280,7 +280,6 @@ p{
 
 }
 
-.options li h2,
 .options li a{
     color: white;
     text-decoration: none;
@@ -290,12 +289,11 @@ p{
 }
 
 .options li a:hover{
-    font-size: 48px;
+    font-size: 32px;
     text-transform: uppercase;
     font-weight: bolder;
     font-style: oblique;
-    color: red;
-    text-shadow: 1px 1px 8px red;
+    color: #76C039;
     transition: 0.7s;
 }
 
