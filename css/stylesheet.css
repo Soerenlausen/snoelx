@@ -331,7 +331,10 @@ p{
     padding-top: 10vh;
     list-style: none;
     align-items: center;
+}
 
+.options li{
+    padding-bottom: 20px;
 }
 
 .options li a{
@@ -339,7 +342,6 @@ p{
     text-decoration: none;
     font-family: 'Comic Sans MS', sans-serif;
     transition: 0.7s;
-    padding-bottom: 10px;
 }
 
 .options li a:hover{
