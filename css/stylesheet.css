@@ -299,10 +299,22 @@ p{
 
 /* more.html */
 
+.mb{
+    background-color: #081F2C;
+}
+
+.mb main{
+    padding-top: 0;
+}
+
 .h1c{
     display: flex;
     width: 100%;
     padding: 30px;
+}
+
+.h1c a:hover{
+    color: #ffc261;
 }
 
 .options{
@@ -328,7 +340,7 @@ p{
     text-transform: uppercase;
     font-weight: bolder;
     font-style: oblique;
-    color: #76C039;
+    color: #ffc261;
     transition: 0.7s;
 }
 
