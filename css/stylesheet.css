@@ -449,17 +449,19 @@ p{
 .tshirt{
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 45px) 1fr;
+    grid-template-columns: 50px 4fr 8fr 50px;
+    grid-template-rows: repeat(5, 45px) 90px 1fr 45px;
     background-color: #fdfbf4;
     padding: 50px 30px 50px 60px;
     grid-template-areas: 
-    ". pic"
-    "h2 pic"
-    "p1 pic"
-    "label pic"
-    "buy pic"
-    "p2 pic";
+    ". . pic ."
+    ". h2 pic ."
+    ". p1 pic ."
+    ". label pic ."
+    ". buy pic ."
+    ". h3 pic ."
+    ". p2 pic ."
+    " . . pic .";
     column-gap: 20px;
 }
 
@@ -468,9 +470,19 @@ p{
     grid-area: h2;
 }
 
+.tshirt h3{
+    grid-area: h3;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    align-self: flex-end;
+}
+
 .tshirt .pd{
     grid-area: p2;
-    align-self: center;
+    align-self: flex-start;
+    width: 75%;
+    font-size: 16px;
 }
 
 .tshirt .price{
@@ -643,10 +655,23 @@ padding: 20px;
     "label"
     "buy"
     "p2";
+    padding: 30px;
 }
 
 .tshirt img{
     margin-bottom: 30px;
+}
+
+.tshirt div{
+    grid-area: label;
+    width: 100px;
+    padding: 0;
+    padding-bottom: 10px;
+    align-self: flex-end;
+}
+
+.tshirt .pd{
+    padding-top: 20px;
 }
 
 }
