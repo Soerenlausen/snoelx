@@ -654,6 +654,7 @@ padding: 20px;
     "p1"
     "label"
     "buy"
+    "h3"
     "p2";
     padding: 30px;
 }
@@ -670,8 +671,8 @@ padding: 20px;
     align-self: flex-end;
 }
 
-.tshirt .pd{
-    padding-top: 20px;
+.tshirt h3{
+    padding-top: 30px;
 }
 
 }
