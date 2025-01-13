@@ -210,10 +210,11 @@ p{
 
 .gallery{
     background-color: #ffc261;
+    padding: 30px 0;
 }
 
 .gtitle{
-    padding-top: 30px;
+    padding-top: 50px 0 20px 0;
 }
 
 .frame{
@@ -222,7 +223,7 @@ p{
     width: 100%;
     overflow-x: scroll;
     gap: 15px;
-    padding: 50px 20px;
+    padding: 20px 20px 50px 20px;
     scrollbar-width: none;
 }
 
@@ -239,6 +240,7 @@ p{
     background-color: #ffc261;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 
 .whoyou div{
@@ -551,6 +553,10 @@ p{
     font-size: 16px;
 }
 
+.gtitle{
+    padding: 0 0 10px 0;
+}
+
 .frame img{
     max-width: 350px;
     max-height: 350px;
@@ -764,6 +770,15 @@ footer div ul {
     padding-top: 0.5em;
 }
 
+.payoptions i:hover{
+    color: white;
+    cursor: default;
+}
+
 div i {
     padding-right: 0.1em;
+}
+
+footer a:hover{
+    color: #76C039;
 }
