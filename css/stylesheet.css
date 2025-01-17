@@ -386,7 +386,6 @@ p{
 .options{
     display: flex;
     flex-direction: column;
-    padding: 0;
     padding-top: 10vh;
     list-style: none;
     align-items: center;
@@ -404,13 +403,18 @@ p{
     transition: 0.7s;
     font-size: 32px;
     text-transform: uppercase;
-    font-weight: bolder;
-    font-style: oblique;
 }
 
-.options li a:hover{
+.options li a:hover,
+#home:hover{
     color: #ffc261;
     transition: 0.7s;
+}
+
+#home{
+    color: grey;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 /* blog.html */
@@ -631,6 +635,11 @@ p{
 
 .ptitle {
     border-top: 0.08em solid #222222;
+}
+
+.bright2,
+.bleft2{
+    display: none;
 }
 
 .pbox{
