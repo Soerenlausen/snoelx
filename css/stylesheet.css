@@ -193,11 +193,6 @@ h2{
     border: 0.16em solid #222222;
 }
 
-.frame img:hover{
-    transform: scale(1.05);
-    box-shadow: 1px 1px 8px #222222;
-}
-
 p{
     grid-area: p;
     font-size: 18px;
@@ -215,6 +210,41 @@ p{
 
 .gtitle{
     padding-top: 50px 0 20px 0;
+}
+
+.bright1{
+    position: absolute;
+    right: 50px;
+    top: 100vh;
+    box-shadow: 1px 1px 3px grey;
+    border-radius: 5rem;
+}
+
+.bleft1{
+    position: absolute;
+    left: 50px;
+    top: 100vh;
+    box-shadow: 1px 1px 3px grey;
+    border-radius: 5rem;
+}
+
+.bright1 i,
+.bleft1 i{
+    font-size: 48px;
+}
+
+.gallery a i:hover{
+    color: white;
+}
+
+#lastart {
+    scroll-margin-top: 30vh;
+    scroll-margin-right: 15px;
+}
+
+#firstart {
+    scroll-margin-top: 30vh;
+    scroll-margin-left: 15px;
 }
 
 .frame{
@@ -282,6 +312,36 @@ p{
     display: none;
 }
 
+.bright2{
+    position: absolute;
+    right: 50px;
+    top: 170vh;
+    box-shadow: 1px 1px 3px grey;
+    border-radius: 5rem;
+}
+
+.bleft2{
+    position: absolute;
+    left: 50px;
+    top: 170vh;
+    box-shadow: 1px 1px 3px grey;
+    border-radius: 5rem;
+}
+
+.bright2 i,
+.bleft2 i{
+    font-size: 48px;
+    color: #222222;
+}
+
+#lastclothes {
+    scroll-margin-top: 30vh;
+}
+
+#firstclothes {
+    scroll-margin-top: 30vh;
+}
+
 .pbox{
     display: flex;
     flex-direction: column;
@@ -334,20 +394,21 @@ p{
 
 .options li{
     padding-bottom: 20px;
+    font-size: 18px;
 }
 
 .options li a{
     color: white;
     text-decoration: none;
-    font-family: 'Comic Sans MS', sans-serif;
+    font-family: 'Franklin Gothic Medium', sans-serif;
     transition: 0.7s;
-}
-
-.options li a:hover{
     font-size: 32px;
     text-transform: uppercase;
     font-weight: bolder;
     font-style: oblique;
+}
+
+.options li a:hover{
     color: #ffc261;
     transition: 0.7s;
 }
@@ -385,7 +446,7 @@ p{
 }
 
 .blog p{
-    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-family: 'Franklin Gothic Medium', sans-serif;
     font-size: 20px;
     padding: 10px 20px;
     align-self: center;
