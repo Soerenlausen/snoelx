@@ -377,6 +377,7 @@ p{
     display: flex;
     width: 100%;
     padding: 30px;
+    justify-content: center;
 }
 
 .h1c a:hover{
@@ -389,6 +390,7 @@ p{
     padding-top: 10vh;
     list-style: none;
     align-items: center;
+    padding-left: 0;
 }
 
 .options li{
@@ -637,6 +639,8 @@ p{
     border-top: 0.08em solid #222222;
 }
 
+.bright1,
+.bleft1,
 .bright2,
 .bleft2{
     display: none;
