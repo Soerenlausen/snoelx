@@ -187,10 +187,19 @@ h2{
     border-radius: 2rem;
 }
 
-.frame img{
+.scrollable-gallery img {
     max-height: 450px;
     border-radius: 15px;
     border: 0.16em solid #222222;
+    margin: 0 5px; /* Add some margin between images */
+    transition: transform 0.3s ease; /* Smooth transition */
+    scroll-snap-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p{
@@ -206,48 +215,88 @@ p{
 .gallery{
     background-color: #ffc261;
     padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .gtitle{
     padding-top: 50px 0 20px 0;
 }
 
-.bright1{
+.bright1 {
     position: absolute;
     right: 50px;
-    top: 100vh;
-    box-shadow: 1px 1px 3px grey;
+    top: auto;
+    box-shadow: 1px 1px 5px black;
     border-radius: 5rem;
+    text-decoration: none;
 }
 
-.bleft1{
+.bleft1 {
     position: absolute;
     left: 50px;
-    top: 100vh;
-    box-shadow: 1px 1px 3px grey;
+    top: auto;
+    box-shadow: 1px 1px 5px black;
     border-radius: 5rem;
+    text-decoration: none;
+}
+
+.bright3 {
+    position: absolute;
+    right: 20px;
+    top: auto;
+    border-radius: 5rem;
+    text-decoration: none;
+}
+
+.bleft3{
+    position: absolute;
+    left: 20px;
+    top: auto;
+    border-radius: 5rem;
+    text-decoration: none;
 }
 
 .bright1 i,
-.bleft1 i{
+.bleft1 i,
+.bright2 i,
+.bleft2 i,
+.bright3 i,
+.bleft3 i{
     font-size: 48px;
 }
 
-.gallery a i:hover{
-    color: white;
+
+.bright1,
+.bleft1,
+.bright2,
+.bleft2,
+.bright3,
+.bleft3 {
+    opacity: 50%;
+    transition: 0.7s;
+    color: black;
+    outline: 1px solid grey;
 }
 
-#lastart {
-    scroll-margin-top: 30vh;
-    scroll-margin-right: 15px;
+.bright1:hover,
+.bleft1:hover,
+.bright2:hover,
+.bleft2:hover,
+.bright3:hover,
+.bleft3:hover {
+    opacity: 100%;
+    transition: 0.7s;
+    transform: scale(1.10);
 }
 
-#firstart {
-    scroll-margin-top: 30vh;
-    scroll-margin-left: 15px;
+.gallery a i:hover,
+.bright2 i:hover, .bleft2 i:hover{
+    color: black;
 }
 
-.frame{
+.scrollable-gallery{
     display: grid inline;
     grid-auto-flow: column;
     width: 100%;
@@ -255,6 +304,7 @@ p{
     gap: 15px;
     padding: 20px 20px 50px 20px;
     scrollbar-width: none;
+    scroll-snap-type: x mandatory;
 }
 
 .whoyou ul{
@@ -304,10 +354,11 @@ p{
     border-top: 0.08em solid #222222;
     border-bottom: 0.08em solid #222222;
     scrollbar-width: none;
+    scroll-snap-type: x mandatory;
 }
 
 .clothes::-webkit-scrollbar,
-.frame::-webkit-scrollbar,
+.scrollable-gallery::-webkit-scrollbar,
 *::-webkit-scrollbar {
     display: none;
 }
@@ -315,31 +366,25 @@ p{
 .bright2{
     position: absolute;
     right: 50px;
-    top: 170vh;
-    box-shadow: 1px 1px 3px grey;
+    height: 48px;
+    display: flex;
+    align-items: center;
     border-radius: 5rem;
+    text-decoration: none;
+    align-self: center;
+    box-shadow: 1px 1px 3px black;
 }
 
 .bleft2{
     position: absolute;
     left: 50px;
-    top: 170vh;
-    box-shadow: 1px 1px 3px grey;
+    height: 48px;
+    display: flex;
+    align-items: center;
     border-radius: 5rem;
-}
-
-.bright2 i,
-.bleft2 i{
-    font-size: 48px;
-    color: #222222;
-}
-
-#lastclothes {
-    scroll-margin-top: 30vh;
-}
-
-#firstclothes {
-    scroll-margin-top: 30vh;
+    text-decoration: none;
+    align-self: center;
+    box-shadow: 1px 1px 3px black;
 }
 
 .pbox{
@@ -349,6 +394,8 @@ p{
     padding-bottom: 20px;
     border: 0.04em solid #222222;
     justify-content: center;
+    transition: transform 0.3s ease; /* Smooth transition */
+    scroll-snap-align: center;
 }
 
 .ptext{
@@ -623,7 +670,12 @@ p{
     padding: 0 0 10px 0;
 }
 
-.frame img{
+.scrollable-gallery{
+    display: none;
+}
+
+.scrollable-gallery img,
+#galleryImage {
     max-width: 350px;
     max-height: 350px;
     align-self: center;
@@ -771,6 +823,10 @@ padding: 20px;
    header nav a {
     padding-left: 50px;
    }
+
+   .gallery-container {
+    display: none;
+}
 
 }
 

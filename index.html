@@ -6,6 +6,7 @@
     <title>SNOELX</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/nav.js" defer></script>
+    <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/f2e73786ec.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -37,22 +38,27 @@
         </div>
         <section class="gallery" id="art">
             <h2 class="gtitle">ARTT DISPLAY</h2>
-            <a href="index.html#firstart" class="bleft1"><i class="fa-solid fa-circle-left"></i></a>
-            <a href="index.html#lastart" class="bright1"><i class="fa-solid fa-circle-right"></i></a>
-            <div class="frame">
-                <img id="firstart" src="img/HENRY18.11.24.png" alt="art">
+            <a class="bleft1" id="scrollLeftBtn"><i class="fa-solid fa-circle-left"></i></a>
+            <a class="bright1" id="scrollRightBtn"><i class="fa-solid fa-circle-right"></i></a>
+            <div class="scrollable-gallery">
+                <img src="img/HENRY18.11.24.png" alt="art">
                 <img src="img/HENRY love or lost.jpg" alt="art">
                 <img src="img/mysweetboycoverart2.png" alt="art">
                 <img src="img/mysweetboycoverart3.png" alt="art">
                 <img src="img/HENRY poster plain3.9.2.2.png" alt="art">
-                <img id="lastart" src="img/PLAYING GAMES.png" alt="art">
+                <img src="img/PLAYING GAMES.png" alt="art">
+            </div>
+            <div class="gallery-container">
+                <a id="prevBtn" class="bleft3"><i class="fa-solid fa-circle-left"></i></a>
+                <img id="galleryImage" src="img/HENRY18.11.24.png" alt="Gallery Image">
+                <a id="nextBtn" class="bright3"><i class="fa-solid fa-circle-right"></i></a>
             </div>
         </section>
         <h2 class="ptitle" id="shop">SHOP: CLOTHES</h2>
-        <section class="clothes">
-            <a href="index.html#firstclothes" class="bleft2"><i class="fa-solid fa-circle-left"></i></a>
-            <a href="index.html#lastclothes" class="bright2"><i class="fa-solid fa-circle-right"></i></a>
-            <a href="" class="pbox" id="firstclothes">
+        <section class="clothes" >
+            <a class="bleft2" id="scrollLeftBtn2"><i class="fa-solid fa-circle-left"></i></a>
+            <a class="bright2" id="scrollRightBtn2"><i class="fa-solid fa-circle-right"></i></a>
+            <a href="" class="pbox">
                 <img class="pic" src="img/SWEATSHIRT silly6.png" alt="sweatshirt with drawn face">
                 <p class="ptext"><b>SNOELX T-SHIRT</b><br>$35</p>
             </a>
@@ -72,7 +78,7 @@
                 <img class="pic" src="img/SWEATSHIRT silly6.png" alt="sweatshirt with drawn face">
                 <p class="ptext"><b>SNOELX T-SHIRT</b><br>$35</p>
             </a>
-            <a href="" class="pbox" id="lastclothes">
+            <a href="" class="pbox">
                 <img class="pic" src="img/SWEATSHIRT silly6.png" alt="sweatshirt with drawn face">
                 <p class="ptext"><b>SNOELX T-SHIRT</b><br>$35</p>
             </a>
