@@ -643,6 +643,11 @@ p{
     border: none;
 }
 
+/* Webcam */
+.wcb{
+    background-color: #76C039;
+}
+
 @media only screen and (max-width: 799px) {
 header > nav {
     display: none;
