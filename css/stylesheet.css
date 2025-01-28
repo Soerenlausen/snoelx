@@ -21,7 +21,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #222222;
+    
     color: white;
     height: 80px;
     align-items: center;
@@ -50,7 +50,8 @@ i {
     cursor: pointer;
 }
 
-i:hover{
+header i:hover,
+footer i:hover{
     color: #76C039;
     transition: 0.5s;
 }
@@ -642,81 +643,53 @@ p{
 
 /* Webcam */
 .wcb{
-    background-color: #76C039;
-}
-
-/* macsite */
-.ms{
-    background-color: #3662A9;
-    color: #F4F4E7;
-}
-
-.mh{
-    background-color: #3662A9;
-    border-bottom: 1px solid #F4F4E7;
-    margin: 20px;
-}
-
-.mh .h1,
-.mh li a{
-    color: #F4F4E7;
-    font-family: 'Teachers', serif;
-    font-weight: 300;
-}
-
-.tol{
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 75vh;
-    justify-content: center;
-    align-items: center;
-    color: crimson;
-    font-size: 72px;
-    -webkit-text-stroke: 0.01em black;
-    text-shadow: 1px 1px 25px crimson;
-}
-
-.ms1{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 30px;
+    min-height: 800px;
+    background-color: #128712;
+    align-items: center;
 }
 
-.bwmacpic{
-    width: 600px;
-    object-fit: contain;
-    border-radius: 15px;
-    align-self: center;
-    margin: 20px;
+/* macsite */
+.msh{
+    background-color: #128712;
 }
 
-.bbtn{
-    color: #F4F4E7;
+.mshl{
+    padding: 20px 30px 100px 30px;
+    font-size: 72px;
     text-align: center;
-    padding-top: 20px;
-}
-
-.mh nav a:hover,
-.mh .h1:hover,
-.mh i:hover{
     color: #F4F4E7;
+    text-shadow: 1px 1px 5px black;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
-.msf a:hover,
-.msf i:hover{
-    color: #3662A9;
+.mshi{
+    object-fit: contain;
+    height: 450px;
+    margin-top: 50px;
+    border-radius: 15px;
 }
 
-.msf .footercontainer{
-    background-color: #F4F4E7;
+.msh li a,
+.msh a,
+.msh a i{
+    transition: 0.5s;
 }
 
-.msf .footerbox,
-.msf .footerbox li a,
-.msf .followus a{
-    color: #3662A9;
+.msn li a:hover,
+.msn a:hover,
+.msn i:hover{
+    color: #222222;
+    transition: 0.5s;
+}
+
+@media (prefers-color-scheme: light){
+    .mh i:hover{
+        color: #3662A9;
+        background-color: #F4F4E7;
+    }
 }
 
 @media only screen and (max-width: 799px) {
