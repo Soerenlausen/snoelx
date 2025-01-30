@@ -56,6 +56,10 @@ footer i:hover{
     transition: 0.5s;
 }
 
+.bgc{
+    background-color: #222222;
+}
+
 .h1 {
     /*font-family: 'Futura', sans-serif;*/
     font-family: 'Comic Sans MS', sans-serif;
@@ -397,6 +401,7 @@ p{
     justify-content: center;
     transition: transform 0.3s ease; /* Smooth transition */
     scroll-snap-align: center;
+    text-decoration: none;
 }
 
 .ptext{
