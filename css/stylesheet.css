@@ -863,6 +863,16 @@ padding: 20px;
     padding-top: 30px;
 }
 
+.mshi{
+    width: 355px;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+.mshl{
+    font-size: 48px;
+}
+
 }
 
 /* Media Query for Mobile Devices */
