@@ -694,6 +694,23 @@ p{
     transition: 0.5s;
 }
 
+.tbms{
+    display: flex;
+    background-color: #F4F4E7;
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+}
+
+.tcms{
+    color: #222222;
+    background-color: #41ad49;
+    padding: 20px;
+    border: 2px solid #222222;
+    width: fit-content;
+    border-radius: 15px;
+}
+
 @media (prefers-color-scheme: light){
     .mh i:hover{
         color: #3662A9;
