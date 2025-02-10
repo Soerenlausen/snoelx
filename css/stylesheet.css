@@ -702,15 +702,11 @@ p{
     color: #F4F4E7;
     padding: 15px 20px;
     border-radius: 50px;
-    text-shadow: 1px 1px 3px #222222;
-    transition: 0.5s;
+    text-shadow: 1px 1px 3px #222222; 
 }
 
 .btnd:hover{
-    color: #a0e557;
-    background-image: url(/img/bwposterAI3.jpg);
-    background-size: contain;
-    transition: 0.5s;
+    transform: scale(1.2);
 }
 
 .btnd i{
@@ -719,9 +715,8 @@ p{
 }
 
 #dontcall{
-    scroll-margin-top: 30px;
+    scroll-margin-top: 40vh;
     scroll-behavior: smooth;
-    transition: 0.7s;
 }
 
 .tbms{
@@ -742,6 +737,32 @@ p{
     border: 2px solid #222222;
     width: fit-content;
     border-radius: 15px;
+}
+
+.msp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #128712;
+}
+
+.msnp{
+    object-fit: contain;
+    width: 375px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.msnp:hover{
+    box-shadow: 1px 1px 8px #222222;
+    transform: scale(1.05);
+}
+
+.mspt{
+    color: #F4F4E7;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 @media (prefers-color-scheme: light){
